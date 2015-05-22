@@ -6,6 +6,7 @@
 
     {{#foreach posts}}
         {{#if @first}}
+        <div class="first-post">
             <p class="label left-col">Latest Post</p>
             <time class="date right-col">05-12-2015</time>
             <h2 class="post-title right-col">{{title}}</h2>
@@ -15,6 +16,7 @@
             <div class="tags right-col">
                 {{tags separator=" "}}
             </div>
+        </div>
         {{else}}
             {{#if @secondary}}
                 {{> secondary_post}}

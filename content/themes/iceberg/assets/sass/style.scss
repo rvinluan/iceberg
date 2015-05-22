@@ -73,18 +73,26 @@ main {
     width: 200px;
     margin-right: 20px;
     display: inline-block;
+    vertical-align: top;
   }
 
   .right-col {
     width: 680px;
     display: inline-block;
+    vertical-align: top;
   }
+}
+
+.first-post {
+  margin-bottom: 100px;
 }
 
 .label {
   font: normal 200 16px/1 "Input Sans Narrow", sans-serif;
   color: $blue-3;
   text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0;
 }
 
 .date {
@@ -102,6 +110,7 @@ main {
 }
 
 .subtitle {
+  margin: 0 0 2em 0;
   font: normal 200 28px/1.2 "Brooklyn Light", serif;
 }
 
