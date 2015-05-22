@@ -4,11 +4,13 @@
 {{! The main content area on the homepage }}
 <main id="content" class="content" role="main">
 
+    {{> about_section}}
+
     {{#foreach posts}}
         {{#if @first}}
         <div class="first-post">
             <p class="label left-col">Latest Post</p>
-            <time class="date right-col">05-12-2015</time>
+            <time class="date right-col">{{date}}</time>
             <h2 class="post-title right-col">{{title}}</h2>
             <p class="label left-col">Subtitle</p>
             <h3 class="subtitle right-col">{{meta_description}}</h3>
