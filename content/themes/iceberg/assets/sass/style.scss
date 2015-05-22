@@ -1,0 +1,124 @@
+$blue-0: #BDE5EC; //header, text
+$blue-1: #6ECCDF;
+$blue-2: #3EAEE3;
+$blue-3: #2C5EAC; //tags, lines
+$blue-4: #253270;
+$blue-5: #141947; //background
+
+html, body {
+  -webkit-font-smoothing: antialiased;
+  height: 100%;
+  margin: 0; padding: 0;
+}
+
+body {
+  color: $blue-0;
+  background-color: $blue-1;
+  font: normal 200 16px/1.5 "Input Sans Narrow", sans serif;
+}
+
+.big-header {
+  height: 80%;
+  background-color: $blue-1;
+  position: relative;
+
+  h1 {
+    //absolute center. needs a height
+    position: absolute;
+    margin: auto;
+    height: 3em;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+
+    font-weight: 200;
+    text-transform: uppercase;
+    font-size: 40px;
+    letter-spacing: 5px;
+  }
+
+  [class^="color-band"] {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .color-band-1 {
+    height: 90px;
+    background-color: $blue-2;
+  }
+  .color-band-2 {
+    height: 70px;
+    background-color: $blue-3;
+  }
+  .color-band-3 {
+    height: 40px;
+    background-color: $blue-4;
+  }
+}
+
+.site-wrapper {
+  background-color: $blue-5;
+  padding: 1px; //fix margin collapsing
+}
+
+main {
+  width: 900px;
+  margin: 100px auto;
+  font-size: 0;
+
+  .left-col {
+    width: 200px;
+    margin-right: 20px;
+    display: inline-block;
+  }
+
+  .right-col {
+    width: 680px;
+    display: inline-block;
+  }
+}
+
+.label {
+  font: normal 200 16px/1 "Input Sans Narrow", sans-serif;
+  color: $blue-3;
+  text-transform: uppercase;
+}
+
+.date {
+  font-size: 14px;
+}
+
+.post-title {
+  font: normal 900 80px/0.9 "Brooklyn Extrabold", serif;
+  text-transform: lowercase;
+  margin-left: 220px;
+
+  &::first-letter {
+    text-transform: uppercase;
+  }
+}
+
+.subtitle {
+  font: normal 200 28px/1.2 "Brooklyn Light", serif;
+}
+
+.tags a {
+  font: normal 100 12px/1 "Input Sans Narrow", sans-serif;
+  background-color: $blue-3;
+  color: white;
+  margin-right: 5px;
+  padding: 5px;
+  text-decoration: none;
+  transition: all .3s;
+
+  &:hover {
+    background-color: $blue-2;
+  }
+}
+
+.secondary-title {
+  font: normal 900 30px/0.9 "Brooklyn Extrabold", serif;
+}
